@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ofertas Nike</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: #000;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_906,c_limit/9994fbd1-0935-49c1-9e3d-5dc45b6a9f6e/nike-just-do-it.jpg') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h2 {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    .productos {
+      padding: 3rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .producto {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .producto:hover {
+      transform: translateY(-5px);
+    }
+
+    .producto img {
+      width: 100%;
+      display: block;
+    }
+
+    .producto h3 {
+      margin: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .producto p {
+      margin: 0 1rem 1rem;
+      font-weight: bold;
+      color: #e60023;
+    }
+
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ofertas Nike</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Ofertas</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Los tenis Nike más lindos con descuentos especiales</h2>
+  </section>
+
+  <section class="productos">
+    <div class="producto">
+      <img src="https://media.revistagq.com/photos/6278f7110f44587c03d8e783/master/w_1600%2Cc_limit/Nike%2520Air%2520Force%25201%2520de%2520Louis%2520Vuitton%25201.jpeg" alt="Nike Air Max 97">
+      <h3>Nike Air Max 97</h3>
+      <p>$70.00</p>
+
+
+      <form action="carrito.html" method="post">
+        <input type="hidden" name="id" value="2">
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" value="1" min="1" style="width: 60px; margin-left: 10px;">
+        <button type="submit" class="btn btn-success">Agregar al carrito</button>
+    </form>
+
+
+
+    </div>
+    <div class="producto">
+      <img src="https://media.revistagq.com/photos/61e83211acd48c90acb49c65/16:9/w_1283,h_722,c_limit/Louis%20Vuitton%20y%20Nike%20Air%20Force%201%20por%20Virgil%20Abloh%20(1).jpg" alt="Nike Air Force 1">
+      <h3>Nike Air Force 1</h3>
+      <p>$40.00</p>
+
+
+      <form action="carrito.html" method="post">
+        <input type="hidden" name="id" value="2">
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" value="1" min="1" style="width: 60px; margin-left: 10px;">
+        <button type="submit" class="btn btn-success">Agregar al carrito</button>
+    </form>
+
+
+
+
+    </div>
+    <div class="producto">
+      <img src="https://hips.hearstapps.com/hmg-prod/images/louis-vuitton-x-nike-air-force-1-por-virgil-abloh-6-1653386930.jpg?crop=1.00xw:0.604xh;0,0.191xh&resize=1200:*" alt="Nike Air Max 90">
+      <h3>Nike Air Max 90</h3>
+      <p>$50.00</p>
+
+
+      <form action="carrito.html" method="post">
+        <input type="hidden" name="id" value="2">
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" value="1" min="1" style="width: 60px; margin-left: 10px;">
+        <button type="submit" class="btn btn-success">Agregar al carrito</button>
+    </form>
+
+
+
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ofertas Nike. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
